@@ -1,0 +1,229 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: black;
+}
+.main{
+  width: 100vw;
+  height: 644px;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  top: 0px;
+}
+.box{
+  background-color: black;
+  opacity: 0.69;
+  width: 100vw;
+  height: 644px;
+  position: absolute;
+  top: 0px;
+}
+nav{
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+}
+nav img{
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+nav button{
+  background: red;
+  color: white;
+  font-weight: none;
+  font-size: 20px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+}
+.hero{
+  height: 100%;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 23px;
+}
+.hero> :nth-child(1){
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero> :nth-child(2){
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+}
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.start button{
+  background: red;
+  color: white;
+  font-weight: none;
+  font-size: 24px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+}
+.start input{
+  background-color: rgba(23,23,23,0.2);
+  color: white;
+  font-weight: none;
+  font-size: 24px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+  border: 1px solid white;
+}
+.separation{
+  background: dimgrey;
+  height: 3px;
+  width: 100vw;
+}
+
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+}
+.secImg{
+  position: relative;
+}
+.secImg img{
+  width: 555px;
+  z-index: 10;
+  position: relative;
+}
+.secImg video{
+  position: absolute;
+  top: 38px;
+  right: 0px;
+  width: 555px;
+}
+section.first > div{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+section.first > div :nth-child(1){
+  font-size: 48px;
+  font-weight: bolder;
+}
+section.first > div :nth-child(2){
+  font-size: 24px;
+}
+
+.faq{
+  color: white;
+  background-color: black;
+  padding: 34px;
+}
+
+.faqbox svg{
+  filter: invert(1);
+}
+
+.faq h2{
+  text-align: center;
+  font-size: 48px;
+}
+
+.faqbox:hover{
+  padding: 28px;
+  background-color: #3d3d3d;
+}
+
+.faqbox{
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  background-color: #2d2d2d;
+  max-width: 60vw;
+  margin: 34px auto;
+  color: white;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+footer{
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 14px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.footer-item a{
+  color: white;
+}
+footer .questions{
+  padding: 34px 0px;
+}
+
+@media only screen and (max-width: 1300px){
+  .start{
+    flex-wrap: wrap;
+  }
+  .secImg img{
+    width: 305px;
+  }
+  .secImg video{
+    width: 305px;
+  }
+  .first{
+    flex-wrap: wrap;
+  }
+  section.first > div :nth-child(1){
+    font-size: 24px;
+  }
+  section.first > div :nth-child(2){
+    font-size: 18px;
+  }
+  .faq h2{
+    font-size: 24px;
+  }
+  .faqbox{
+    font-size: 18px;
+  }
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+    
